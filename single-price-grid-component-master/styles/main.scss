@@ -1,0 +1,138 @@
+// variables
+$radius: 0.375rem;
+$shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+// Primary
+$Cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+// Secondary
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+$white: #ffffff;
+// Background cards
+$CyanBg:#2BB3B1;
+$CyanLightBg: #4ABEBD;
+
+// Elements 
+body{
+    background-color: $LightGray;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+footer{
+    margin-top: 2.2rem;
+}
+.bg-Cyan{
+    background-color: $CyanBg;
+}
+.bg-CyanLight{
+    background-color: $CyanLightBg;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow;
+}
+.my-7{
+    margin-top: 7rem;
+}
+.radius-bl{
+    border-bottom-left-radius: $radius;
+}
+.radius-br{
+    border-bottom-right-radius: $radius;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-color{
+    color: $LightGray;
+    margin-right: 4rem;
+}
+
+// Items
+.price-element{
+    border-radius: $radius;
+    background-color: $white;
+}
+.price-top h1{
+    color: $Cyan;
+}
+.price-top h3{
+    color:$BrightYellow;
+}
+.price-top p{
+    color: $GrayishBlue;
+}
+.card{
+    padding-right: 2rem;
+    color: $LightGray;
+}
+.card span{
+    font-size: 26px;
+    font-weight: 700;
+}
+.card h4{
+    font-size: 18px;
+}
+.btn{
+    color: $white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: $radius;
+    background-color: $BrightYellow;
+    transition: 0.3s;
+    box-shadow: $shadow;
+}
+.btn:hover{
+    background-color: hsl(71, 86%, 45%);;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1000px) {
+    .grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .radius-bl{
+        border-bottom-left-radius: 0;
+    }
+    .radius-br{
+        border-bottom-left-radius: $radius;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .radius-bl{
+        border-bottom-left-radius: 0;
+    }
+    .radius-br{
+        border-bottom-left-radius: $radius;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
