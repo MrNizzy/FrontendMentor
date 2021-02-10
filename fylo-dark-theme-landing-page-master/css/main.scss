@@ -1,0 +1,347 @@
+//Colors
+//Primary
+$primaryDarkBlue: hsl(217, 28%, 15%);
+$primaryDarkBlueMain: hsl(218, 28%, 13%);
+$primaryDarkBlueFooter: hsl(216, 53%, 9%);
+$primaryDarkBlueTestimonials: hsl(219, 30%, 18%);
+
+//Acent
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$lightRed: hsl(0, 100%, 63%);
+
+//Neutral
+$white: hsl(0, 0%, 100%);
+
+//Typography
+//Fonts
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+.openSans {
+    font-family: "Open Sans", sans-serif;
+}
+//Weight
+.weight-400 {
+    font-weight: 400;
+}
+.weight-700 {
+    font-weight: 700;
+}
+
+body {
+    background: $primaryDarkBlueMain;
+    color: $white;
+    font-size: 14px;
+}
+
+//Elements
+//Contents
+.grid {
+    display: grid;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.ml-5 {
+    margin-left: 5em;
+}
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 8em;
+}
+h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+main p {
+    font-size: 1.22em;
+    padding: 0 3em;
+    text-align: center;
+}
+.img-fluid {
+    width: 100%;
+}
+//Navbar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em auto;
+    width: 90%;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar li {
+    display: inline;
+    padding: 0 1.3em;
+}
+.navbar li a {
+    text-decoration: none;
+    color: $white;
+}
+.navbar li a:hover {
+    color: $blue;
+}
+//Section Items
+.grid-columns-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7em;
+}
+.grid-columns-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.container-items {
+    margin: auto;
+    width: 60%;
+}
+.section-items h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+.section-items p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.section-items img {
+    width: auto;
+    height: 5em;
+}
+.section-items {
+    text-align: center;
+    margin-bottom: 5em;
+}
+//Work
+.section-work {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 5em;
+}
+.section-work img {
+    width: 40em;
+}
+.section-work a {
+    color: $cyan;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section-work a:hover {
+    color: $blue;
+}
+.section-work a img {
+    width: 1.1em;
+}
+//section quotes
+.container-quotes {
+    margin: auto;
+    width: 75%;
+    margin-bottom: 4em;
+}
+.img-quote {
+    position: relative;
+    top: 1em;
+    left: -0.5em;
+    z-index: -1;
+}
+.box-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3em;
+}
+.card {
+    background: $primaryDarkBlueTestimonials;
+    border-radius: 0.3em;
+    padding: 2em 1.5em;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    font-size: 12px;
+}
+.profile img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+//section subscribe
+.section-subscribe {
+    position: relative;
+    top: 7em;
+    margin: auto;
+    width: 60%;
+    background: $primaryDarkBlueTestimonials;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: rgba(0, 0, 0, 0.15) 10.95px 10.95px 11.6px;
+}
+.section-subscribe-form {
+    display: flex;
+    gap: 2em;
+}
+.section-subscribe-form input {
+    border-radius: 2em;
+    padding-left: 2em;
+    width: 100%;
+    border: none;
+    height: 3em;
+}
+.section-subscribe-form a {
+    width: 30%;
+    padding: 0.8em 1em;
+    text-align: center;
+    border: none;
+}
+//Footer
+footer {
+    background: $primaryDarkBlueFooter;
+    padding-top: 10em;
+}
+.footer-container {
+    margin: auto;
+    width: 85%;
+}
+.footer-items {
+    gap: 3em;
+    line-height: 1.5em;
+    justify-content: center;
+}
+.footer-flex-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-flex-icons img {
+    margin-right: 1em;
+}
+.footer-items ul {
+    list-style: none;
+}
+.footer-items li {
+    line-height: 2.2em;
+}
+.footer-items a {
+    text-decoration: none;
+    color: $white;
+}
+.footer-items a:hover {
+    color: $blue;
+}
+.footer-social-networks {
+    margin-top: 1em;
+    font-size: 3em;
+}
+//attribution
+.attribution {
+    text-align: center;
+    margin: auto;
+    margin-top: 5em;
+    padding: 1em;
+}
+.attribution a {
+    color: $cyan;
+}
+.attribution a:hover {
+    color: $blue;
+}
+//Button
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
+    padding: 1em 5em;
+    border-radius: 2em;
+    background: linear-gradient(90deg, $cyan 0%, $blue 100%);
+}
+.btn:hover {
+    opacity: 90%;
+    transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 8em;
+    }
+    .brand img{
+        width: 10em;
+    }
+    .grid-columns-2 {
+        justify-items: center;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .grid-columns-5 {
+        justify-items: left;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .section-work img {
+        width: 100%;
+    }
+    .section-work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 5em;
+    }
+    .ml-5{
+        margin: auto;
+    }
+    .box-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3em;
+    }
+    .section-subscribe-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .section-subscribe-form input {
+        border-radius: 2em;
+        padding-left: 2em;
+        max-width: 90%;
+        border: none;
+    }
+    .section-subscribe-form a {
+        padding: 0.8em 1em;
+        width: 90%;
+        text-align: center;
+        border: none;
+    }
+    .footer-social-networks {
+        margin-top: 1em;
+        font-size: 3em;
+    }
+    .footer-items ul {
+        list-style: none;
+        display: initial;
+    }
+}
