@@ -7,9 +7,9 @@ const Cards = (props) => {
           <img src="./images/icon-ellipsis.svg" alt={"icon"} />
         </div>
         <div>
-          <h2>{props.timeframeCurrent}</h2>
+          <h2>{props.timeframeCurrent}hrs</h2>
           <span>
-            {props.timeframe} - {props.timeframePrevious}
+            {props.timeframe} - {props.timeframePrevious}hrs
           </span>
         </div>
       </div>
