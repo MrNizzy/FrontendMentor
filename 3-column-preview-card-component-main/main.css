@@ -1,0 +1,109 @@
+:root {
+  /* Primary */
+  --color-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-darkCyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --color-transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --color-lightGray: hsl(0, 0%, 95%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  background-color: var(--color-lightGray);
+}
+.card-title {
+  color: var(--color-lightGray);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-paragraph {
+  line-height: 1.5em;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.container :first-child {
+  border-radius: 5px 0 0 5px;
+}
+.container :nth-last-child(2) {
+  border-radius: 0 5px 5px 0;
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2.5em;
+  color: var(--color-transparentWhite);
+}
+.card-sedans {
+  background-color: var(--color-orange);
+}
+.card-suvs {
+  background-color: var(--color-cyan);
+}
+.card-luxury {
+  background-color: var(--color-darkCyan);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20px;
+  width: 66%;
+}
+.btn {
+  margin-top: 4em;
+  padding: 1em 2em;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 2em;
+  border: none;
+  background-color: var(--color-lightGray);
+  cursor: pointer;
+}
+.btn-sedans {
+  color: var(--color-orange);
+}
+.btn-suvs {
+  color: var(--color-cyan);
+}
+.btn-luxury {
+  color: var(--color-darkCyan);
+}
+
+.attribution {
+  margin: 0.4em 0;
+  grid-column-end: span 3;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+.attribution a{
+    color: var(--color-orange);
+}
+.attribution a:hover{
+    color: var(--color-cyan);
+}
+@media (max-width: 950px){
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width: 725px){
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container :first-child {
+        border-radius: 5px 5px 0 0;
+      }
+      .container :nth-last-child(2) {
+        border-radius: 0 0 5px 5px;
+      }
+}
