@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="dark" id="theme">
+    <main class="container">
+      <nav>
+        <div>
+          <h1>Social Media Dashboard</h1>
+          <span class="nav-span-subtitle">Total Followers: 23,004</span>
+        </div>
+        <div class="switch">
+          <span class="nav-span-subtitle">Dark Mode</span>
+          <input type="checkbox" onclick="switchTheme()"/>
+        </div>
+      </nav>
+      <div class="card-group">
+        <!-- /* Card Facebook */ -->
+        <div class="card card-facebook card-centered">
+          <div class="card-header">
+            <img src="images/icon-facebook.svg" alt="facebook" />
+            <span class="card-span-socialName">@nathanf</span>
+          </div>
+          <h2 class="card-title">1987</h2>
+          <span class="card-span-subtitle">F O L L O W E R S</span>
+          <div class="card-footer">
+            <img src="images/icon-up.svg" alt="up" />
+            <span class="card-span-up">12 Today</span>
+          </div>
+        </div>
+        <!-- /* Card Twitter */ -->
+        <div class="card card-twitter card-centered">
+          <div class="card-header">
+            <img src="images/icon-twitter.svg" alt="twitter" />
+            <span class="card-span-socialName">@nathanf</span>
+          </div>
+          <h2 class="card-title">1044</h2>
+          <span class="card-span-subtitle">F O L L O W E R S</span>
+          <div class="card-footer">
+            <img src="images/icon-up.svg" alt="up" />
+            <span class="card-span-up">99 Today</span>
+          </div>
+        </div>
+        <!-- /* Card Instagram */ -->
+        <div class="card card-instagram card-centered">
+          <div class="card-header">
+            <img src="images/icon-instagram.svg" alt="instagram" />
+            <span class="card-span-socialName">@nathanf</span>
+          </div>
+          <h2 class="card-title">11k</h2>
+          <span class="card-span-subtitle">F O L L O W E R S</span>
+          <div class="card-footer">
+            <img src="images/icon-up.svg" alt="up" />
+            <span class="card-span-up">1099 Today</span>
+          </div>
+        </div>
+        <!-- /* Card Youtube */ -->
+        <div class="card card-youtube card-centered">
+          <div class="card-header">
+            <img src="images/icon-youtube.svg" alt="Youtube" />
+            <span class="card-span-socialName">Nathan F.</span>
+          </div>
+          <h2 class="card-title">8239</h2>
+          <span class="card-span-subtitle">S u b s c r i b e r s</span>
+          <div class="card-footer">
+            <img src="images/icon-down.svg" alt="down" />
+            <span class="card-span-down">144 Today</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <h2 class="overview-title">Overview - Today</h2>
+        <div class="card-group">
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Page Views</b>
+              </span>
+              <img src="images/icon-facebook.svg" alt="Facebook" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">87</h3>
+              <div class="card-footer">
+                <img src="images/icon-up.svg" alt="up" />
+                <span class="card-span-up">3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Likes</b>
+              </span>
+              <img src="images/icon-facebook.svg" alt="Facebook" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">52</h3>
+              <div class="card-footer">
+                <img src="images/icon-down.svg" alt="down" />
+                <span class="card-span-down">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Likes</b>
+              </span>
+              <img src="images/icon-instagram.svg" alt="Instagram" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">5462</h3>
+              <div class="card-footer">
+                <img src="images/icon-up.svg" alt="up" />
+                <span class="card-span-up">2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Profile Views</b>
+              </span>
+              <img src="images/icon-instagram.svg" alt="Instagram" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">52k</h3>
+              <div class="card-footer">
+                <img src="images/icon-up.svg" alt="up" />
+                <span class="card-span-up">1375%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Retweets</b>
+              </span>
+              <img src="images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">117</h3>
+              <div class="card-footer">
+                <img src="images/icon-up.svg" alt="up" />
+                <span class="card-span-up">303%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Likes</b>
+              </span>
+              <img src="images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">507</h3>
+              <div class="card-footer">
+                <img src="images/icon-up.svg" alt="up" />
+                <span class="card-span-up">553%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Likes</b>
+              </span>
+              <img src="images/icon-youtube.svg" alt="Youtube" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">107</h3>
+              <div class="card-footer">
+                <img src="images/icon-down.svg" alt="Down" />
+                <span class="card-span-down">19%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-space">
+            <div class="card-header space-between">
+              <span class="card-span-socialName">
+                <b>Total Views</b>
+              </span>
+              <img src="images/icon-youtube.svg" alt="Youtube" />
+            </div>
+            <div class="card-header space-between">
+              <h3 class="card-title-small">1407</h3>
+              <div class="card-footer">
+                <img src="images/icon-down.svg" alt="Down" />
+                <span class="card-span-down">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        <span>Challenge by</span>
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor.
+        </a>
+        <span> Coded by </span>
+        <a href="https://www.linkedin.com/in/mrnizzy/" target="_blank">
+          Nizzy Hernandez.
+        </a>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
